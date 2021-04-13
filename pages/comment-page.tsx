@@ -7,7 +7,7 @@ import { comment } from 'postcss'
 
 const axiosFetcher = async () => {
   const result = await axios.get<COMMENT[]>(
-    'https://jsonplaceholder.typicode.com/comments'
+    'https://jsonplaceholder.typicode.com/comments/?_limit=10'
   )
   return result.data
 }
